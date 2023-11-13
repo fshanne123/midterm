@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LOGIN</title>
+        <link rel="stylesheet" type = text/css href="file:///home/devasc/labs/devnet-src/MIDTERM/static/styles.css"/>
+    </head>
+    <body>
+        <h1> Login</h1>
+        <form action="/login" methods="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="submit" value="Login"><br><br>
+            
+        </form>
+        <label> Don't have an account? click </label>
+        <a href="{{url_for('registration')}}">Register</a>
+        
+    </body>
+
+</html>
